@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container{
+            display:flex;
+        }
+        .image-container div{
+            border:3px solid red;
+            width:50%;
+        }
+        .image-container img{
+            width:100%;
+            border:3px solid yellow;
+        }
+        @media screen and (max-width:576px){
+            .image-container{
+                flex-direction:column;
+            }
+            /* .image-container img{
+                width:100%;
+            } */
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="image-container">
+            <div class="">
+                <img src="image/food.jfif" alt="">
+            </div>
+            <div class="">
+                <img src="image/tiger.jfif" alt="">
+            </div>
+        </div>
+       
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:red;
+            --secondary-color:blue;
+            --font-size:20px;
+        }
+        h1{
+            color:var(--primary-color); 
+        }
+        h5{
+            background-color: var(--primary-color);
+        }
+        .box{
+            border:3px solid var(--primary-color);}
+        .box p{
+            color:var(--primary-color);
+            font-size:var(--font-size)   
+        }
+       
+        .container{
+            display:grid;
+            gap:20px;
+            grid-template-columns:200px calc(100% - 200px - 20px);
+        }
+        .container .sidebar{
+            background-color:lightgray;
+        }
+        .content{
+            background-color: lightskyblue;
+        }
+         
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
+    <h5> Dolorum illo culpa quisquam, error deleniti vitae  </h5>
+    <div class="box">
+        <h3>doloremque rem doloribus quidem saepe tempore. Maiores.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illum, neque nostrum deleniti cum obcaecati doloribus dolorum quas in perspiciatis!laboriosam quam et eum, blanditiis iste eius porro</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">sidebar</div>
+        <div class="content">Main content</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            align-items:center;
+
+            padding:20px;
+        }
+        .img{
+            width:50%;
+        }
+        .container > p{
+            width:45%;
+        }
+        @media screen and (max-width:576px){
+            .container{
+                flex-direction:column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img" src="tiger.jfif" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dignissimos officiis temporibus incidunt quia exercitationem, cum quis perferendis modi, dolor error facilis provident repellat numquam facere at beatae blanditiis optio?</p>
+    </div>
+</body>
+</html>
